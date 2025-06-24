@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammalia Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <h1>🦁 Mammalia Quiz</h1>
+                <nav>
+                    <!-- <a href="#" class="nav-link">Sobre</a>
+                    <a href="#" class="nav-link">Ranking</a> -->
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Welcome Screen -->
+            <div id="welcomeScreen" class="screen active">
+                <div class="welcome-hero">
+                    <div class="icon-wrapper hero-icon">
+                        <span class="animal-icon">🦁</span>
+                    </div>
+                    <h1 class="hero-title">Bem-vindo ao Mammalia Quiz</h1>
+                    <p class="hero-description">Teste seus conhecimentos sobre os incríveis mamíferos que habitam nosso planeta em um quiz divertido e educativo.</p>
+                    
+                    <div class="welcome-buttons">
+                        <button id="startGameBtn" class="welcome-btn primary">Iniciar Jogo</button>
+                        <button id="howToPlayBtn" class="welcome-btn secondary">Como Funciona</button>
+                        <button id="creditsBtn" class="welcome-btn secondary">Créditos</button>
+                    </div>
+                    
+                    <div class="decoration-icons">
+                        <span class="decoration-icon">🐘</span>
+                        <span class="decoration-icon">🐯</span>
+                        <span class="decoration-icon">🦊</span>
+                        <span class="decoration-icon">🦇</span>
+                        <span class="decoration-icon">🦔</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- How to Play Screen -->
+            <div id="howToPlayScreen" class="screen">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <button id="howToPlayBackBtn" class="back-button">← Voltar</button>
+                        <h2>Como Funciona o Jogo</h2>
+                    </div>
+                    
+                    <div class="instructions-content">
+                        <div class="instruction-step">
+                            <div class="step-icon">1</div>
+                            <div class="step-content">
+                                <h3>Escolha um Nível</h3>
+                                <p>Selecione entre os níveis disponíveis: fácil, médio ou difícil.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-icon">2</div>
+                            <div class="step-content">
+                                <h3>Responda as Perguntas</h3>
+                                <p>Leia atentamente e selecione a resposta que você acredita ser a correta.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-icon">3</div>
+                            <div class="step-content">
+                                <h3>Aprenda com as Explicações</h3>
+                                <p>Após responder, você verá uma explicação sobre o tema da pergunta.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="instruction-step">
+                            <div class="step-icon">4</div>
+                            <div class="step-content">
+                                <h3>Veja seu Resultado</h3>
+                                <p>Ao final do quiz, confira sua pontuação e compartilhe com seus amigos!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="instructions-footer">
+                        <button id="goToGameBtn" class="button primary">Vamos Jogar!</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Credits Screen -->
+            <div id="creditsScreen" class="screen">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <button id="creditsBackBtn" class="back-button">← Voltar</button>
+                        <h2>Créditos</h2>
+                    </div>
+                    
+                    <div class="credits-content">
+                        <p class="credits-intro">O Mammalia Quiz foi desenvolvido com muito carinho pela nossa equipe:</p>
+                        
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-photo-placeholder">
+                                    <span class="photo-icon"><img src="imagem/AnaVi.png " alt=""></span>
+                                </div>
+                                <h3>Ana Vitoria</h3>
+                                <p>3°B</p>
+                            </div>
+                            
+                            <div class="team-member">
+                                <div class="member-photo-placeholder">
+                                    <span class="photo-icon"><img src="imagem/AnaModolo.jpeg" alt=""></span>
+                                </div>
+                                <h3>Ana Modolo</h3>
+                                <p>3°B</p>
+                            </div>
+                            
+                            <div class="team-member">
+                                <div class="member-photo-placeholder">
+                                    <span class="photo-icon"><img src="imagem/thays.png" alt=""></span>
+                                </div>
+                                <h3>Thays</h3>
+                                <p>3°B</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level Selection Screen -->
+            <div id="levelSelection" class="screen">
+                <div class="level-selection-header">
+                    <button id="levelSelectionBackBtn" class="back-button">← Voltar</button>
+                </div>
+                
+                <div class="welcome-section">
+                    <div class="icon-wrapper">
+                        <span class="brain-icon">🧠</span>
+                    </div>
+                    <h2>Quiz de Mamíferos</h2>
+                    <p>Teste seus conhecimentos sobre os incríveis mamíferos que habitam nosso planeta.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-icon">🐾</span>
+                            <span class="stat-text">30 Perguntas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-icon">🏆</span>
+                            <span class="stat-text">3 Níveis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="levels-grid">
+                    <!-- Levels will be inserted here by JavaScript -->
+                </div>
+
+                <div class="fun-fact">
+                    <h3>Você sabia?</h3>
+                    <p>Existem mais de 6.400 espécies de mamíferos no mundo, desde o minúsculo morcego-abelha até a majestosa baleia-azul!</p>
+                </div>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quizScreen" class="screen">
+                <div class="quiz-header">
+                    <button id="backButton" class="back-button">← Voltar</button>
+                    <h2 id="levelTitle" class="level-title"></h2>
+                    <!-- <button id="helpButton" class="help-button">?</button> -->
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-text">
+                        <span>Progresso</span>
+                        <span id="progressCounter"></span>
+                    </div>
+                    <div class="progress-track">
+                        <div id="progressBar" class="progress-fill"></div>
+                    </div>
+                    <div id="progressDots" class="progress-dots"></div>
+                </div>
+
+                <div class="question-card">
+                    <h3 id="questionText" class="question-text"></h3>
+                    <div id="options" class="options"></div>
+                    <div id="explanation" class="explanation hidden"></div>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="resultsScreen" class="screen">
+                <div class="results-content">
+                    <div class="trophy-wrapper">
+                        <span class="trophy-icon">🏆</span>
+                    </div>
+                    <h2>Quiz Completo!</h2>
+                    <div id="score" class="score"></div>
+                    <div id="scoreText" class="score-text"></div>
+                    <div id="message" class="message"></div>
+                    <div class="action-buttons">
+                        <button id="restartButton" class="button primary">↺ Tentar Novamente</button>
+                        <button id="homeButton" class="button secondary">← Voltar aos Níveis</button>
+                    </div>
+                    <button id="shareButton" class="share-button">
+                        ↗ Compartilhar Resultado
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Mammalia Quiz | Aprenda sobre mamíferos de forma divertida</p>
+                <div class="footer-links">
+                    <!-- <a href="#" class="footer-link">Termos de Uso</a>
+                    <a href="#" class="footer-link">Privacidade</a>
+                    <a href="#" class="footer-link">Contato</a> -->
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
